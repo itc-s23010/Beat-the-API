@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">yes || no</string>
+    <string name="bt_yes">yes</string>
+    <string name="bt_no">no</string>
+</resources>

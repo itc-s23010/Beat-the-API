@@ -19,6 +19,8 @@ class MainActivity : AppCompatActivity() {
     companion object {
         private const val DEBUG_TAG = "kadaiApplication"
         private const val YESNO_URL = "https://yesno.wtf/api"
+        private const val INSULT_URL = "https://evilinsult.com/generate_insult.php?lang=ja&type=text"
+        private const val ADVICE_URL = "https://api.adviceslip.com/advice"
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -69,7 +71,7 @@ class MainActivity : AppCompatActivity() {
                         binding.answer.text = answer.capitalize()
 
                         //Log.d(DEBUG_TAG, "結果: $result")
-                        binding.res.text = "APIの答え: ${answer.capitalize()}, 結果: $result"
+                        binding.res.text = "APIの答え: ${answer.capitalize()},\n 結果: $result"
                     }
                 }
             }
